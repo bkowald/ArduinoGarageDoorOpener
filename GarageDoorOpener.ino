@@ -14,6 +14,10 @@
  * Ethernet shield attached to pins 10, 11, 12, 13
  * Connect a relay board or a transistor to drive a relay to pin D2. If you don't use a relay board, you need to have a kickback diode across the relay coil 
  * example board: http://www.ebay.com/itm/181219706599?_trksid=p2059210.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT
+
+Revisions:
+12-22-2016 ABK Change Ip address from 192.168.1.177 to 192.168.5.177 because the third digit of our home address is now 5
+
 */
 
 #include <WString.h>
@@ -23,7 +27,7 @@
 // Enter a MAC address and IP address for your controller below.
 // The IP address will be dependent on your local network:
 byte mac[] = { 0x00, 0xAA, 0xBB, 0xCC, 0xDE, 0x01 };
-IPAddress ip(192,168,1,177);
+IPAddress ip(192,168,5,177);
 
 // Initialize the Ethernet server library
 // with the IP address and port you want to use 
